@@ -27,27 +27,15 @@ public abstract class DriverFactory extends ScenarioSteps {
 
 	public void openApp() {
 
-		System.out.println(System.getProperties());
-		if (System.getProperty("user.dir").contains("ernst")) { // geckodriver
+	
 			System.setProperty("webdriver.chrome.driver",
 					"/Users/Ernst/Desktop/EXE/chromedriver_win32/chromedriver.exe");
 			driver = new ChromeDriver();
 
 			driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);
 			driver.manage().window().maximize();
-		} else {
-			System.setProperty("webdriver.gecko.driver", "/Users/Ernst/Desktop/EXE/chromedriver_win32/geckodriver.exe");
-			 driver = new FirefoxDriver();
-			driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);
-			 String sTitle = driver.getTitle();
-		        System.out.println(sTitle);
-			driver.manage().window().maximize();
-
-		}
-		/*
-		 * driver = new FirefoxDriver(); driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);
-		 * driver.manage().window().maximize();
-		 */
+		
+		
 	}
 
 	public void manageWait() {

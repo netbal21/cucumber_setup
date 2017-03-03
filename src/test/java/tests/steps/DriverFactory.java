@@ -29,7 +29,7 @@ public abstract class DriverFactory extends ScenarioSteps {
 
 	
 			System.setProperty("webdriver.chrome.driver",
-					"/Users/Ernst/Desktop/EXE/chromedriver_win32/chromedriver.exe");
+					"src/test/resources/chromedriver.exe");
 			driver = new ChromeDriver();
 
 			driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);

@@ -21,7 +21,7 @@
 		<serenity.cucumber.version>1.1.8</serenity.cucumber.version>
 
 		<!--Default Serenity Web Driver -->
-		<webdriver.driver>firefox</webdriver.driver>
+		<webdriver.driver>python</webdriver.driver>
 
 	
 	</properties>

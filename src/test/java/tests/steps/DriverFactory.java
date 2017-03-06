@@ -31,11 +31,11 @@ public abstract class DriverFactory extends ScenarioSteps {
 					"C:/Program Files/phantomjs-2.1.1-windows/bin/phantomjs.exe");*/
 		
 		
-
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
 				System.setProperty("webdriver.chrome.driver",
-						"C:/Program Files (x86)/Jenkins/plugins/chromedriver/WEB-INF/lib/chromedriver.exe");
+						"C:/Program Files (x86)/Jenkins/tools/chromedriver/chromedriver.exe");
 		
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(capability);
 
 			driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);
 			driver.manage().window().maximize();

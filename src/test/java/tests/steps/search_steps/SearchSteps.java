@@ -44,7 +44,7 @@ public class SearchSteps extends DriverFactory {
 	}
 	@After()
 	public void tearDown(Scenario scenario) {
-		System.out.println(scenario.isFailed() + " DDDDDDDDDd");
+	//	System.out.println(scenario.isFailed() + " DDDDDDDDDd");
 	 /*   if (scenario.isFailed()) {
 	            final byte[] screenshot = ((TakesScreenshot) driver)
 	                        .getScreenshotAs(OutputType.BYTES);

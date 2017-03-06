@@ -32,10 +32,10 @@ public abstract class DriverFactory extends ScenarioSteps {
 		
 		
 
-				System.setProperty("webdriver.gecko.driver",
-						"C:/Users//Ernst/Downloads/geckodriver-v0.14.0-win64/geckodriver.exe");
+				System.setProperty("webdriver.chrome.driver",
+						"C:/Program Files (x86)/Jenkins/plugins/chromedriver/WEB-INF/lib/chromedriver.exe");
 		
-			driver = new FirefoxDriver();
+			driver = new ChromeDriver();
 
 			driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);
 			driver.manage().window().maximize();

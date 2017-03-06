@@ -6,8 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.GeckoDriverService;
+
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 
@@ -22,15 +23,13 @@ public abstract class DriverFactory extends ScenarioSteps {
 	public String browser;
 
 	private static final String HTTP_PVN_SYMBIOTICS_CO_ZA = "https://www.google.co.za/";
-	private static final String CHROME = "Chrome";
-	private static final String FIREFOX = "firefox";
 
 	public void openApp() {
 
 	
-			System.setProperty("webdriver.chrome.driver",
-					"src/test/resources/chromedriver.exe");
-			driver = new ChromeDriver();
+	/*		System.setProperty(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
+					"C:/Program Files/phantomjs-2.1.1-windows/bin/phantomjs.exe");*/
+			driver = new FirefoxDriver();
 
 			driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);
 			driver.manage().window().maximize();

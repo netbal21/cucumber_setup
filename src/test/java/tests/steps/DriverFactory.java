@@ -29,6 +29,12 @@ public abstract class DriverFactory extends ScenarioSteps {
 	
 	/*		System.setProperty(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
 					"C:/Program Files/phantomjs-2.1.1-windows/bin/phantomjs.exe");*/
+		
+		
+
+				System.setProperty("webdriver.gecko.driver",
+						"C:/Users//Ernst/Downloads/geckodriver-v0.14.0-win64/geckodriver.exe");
+		
 			driver = new FirefoxDriver();
 
 			driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);

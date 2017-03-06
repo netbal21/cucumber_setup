@@ -9,4 +9,4 @@ Scenario Outline: User search for Serenity and Maven
 	Examples: 
 		| searchValue | 
 		| Serenity and Maven |
-		| Maven and Serenity |
+		| Please let me fail |

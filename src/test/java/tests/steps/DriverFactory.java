@@ -34,7 +34,7 @@ public abstract class DriverFactory extends ScenarioSteps {
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 				System.setProperty("webdriver.chrome.driver",
 						"C:/Program Files (x86)/Jenkins/tools/chromedriver/chromedriver.exe");
-		
+				System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "");
 			driver = new ChromeDriver(capability);
 
 			driver.get(HTTP_PVN_SYMBIOTICS_CO_ZA);
